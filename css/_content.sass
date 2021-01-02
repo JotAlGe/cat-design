@@ -1,0 +1,47 @@
+@import _variables
+
+div.content
+    width:  100%
+    max-width:  100%
+    height:  auto
+    max-height:  60%
+    z-index:  -100
+    display:  grid
+    grid-template-columns:  repeat(auto-fit, minmax(300px, 1fr))
+
+    article.title 
+        display:  flex
+        flex-flow:  column
+        justify-content:  center
+        align-items:  center
+        h2
+            font-family: 'Roboto Condensed', sans-serif
+            font-size:  $med
+            font-weight:  900
+            text-shadow: -8px 5px 5px $shadow
+        p
+            font-family:  cursive
+            color:  $red
+            font-size: $small
+            text-shadow: -5px 3px 5px $shadow
+
+    article.photo 
+        width:  90%
+        height:  auto
+        max-height:  70%
+        padding:  5%
+        img
+            max-width:  100%
+            object-fit:  cover
+            /** transition:  transform .5s ease **/
+            /** trannsform: translateX(calc( '--x' / 20 )) translateY(calc( '--y' / 20 )) **/
+        
+        h3
+            font-family: 'Roboto Condensed', sans-serif
+            font-weight:  bold
+            font-size:  2em
+        figcaption
+            font-size:  1.2em
+            font-family:  'Roboto Condensed', sans-serif
+
+
